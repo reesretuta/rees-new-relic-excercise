@@ -21,11 +21,7 @@ describe('util', () => {
         expect(util.cleanupContent("extra    spaces")).toEqual('extra spaces');
     });
 
-    it('should treat multiple spaces as one', () => {
-        expect(util.cleanupContent("extra    spaces")).toEqual('extra spaces');
-    });
-
-    it('should treat multiple spaces as one', () => {
+    it('should count simple word combinations as expected', () => {
         let test = "1 2 3, 1 2 3, 1 2 3";
         let answer = [
             {"combo": "1_2_3", "count": 3},
@@ -35,7 +31,7 @@ describe('util', () => {
         expect(util.getRankedWordCombos(test)).toEqual(answer);
     });
 
-    it('should treat multiple spaces as one', () => {
+    it('should count word combinations as expected', () => {
         let test = "taking my dog, to the park for a walk. taking my bird, to the park for a walk.  taking my bird to the vet, for a walk";
         let answer = [
             {"combo": "for_a_walk", "count": 3},

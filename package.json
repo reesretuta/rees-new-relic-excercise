@@ -1,0 +1,15 @@
+{
+  "name": "rees-new-relic-excercise",
+  "version": "1.0.0",
+  "description": "Rees New Relic Excercise",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest --no-cache --runInBand --forceExit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "26.6.3"
+  }
+}

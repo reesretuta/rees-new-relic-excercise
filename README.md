@@ -14,4 +14,4 @@
 - Node v12 or above
 
 ## Notes
-What I would do next with more time? Use import statements over require, performance test regex text clean up, and test to see any other faster methods beyond streams to read large amounts of files
+What I would do next with more time? Use import statements over require, performance test regex text clean up, and test to see any other performant methods beyond streams to read large amounts of files

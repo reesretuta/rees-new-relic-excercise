@@ -38,7 +38,6 @@ const readFile = (file) => {
     });      
 };
 
-
 module.exports = {
     cleanupContent,
     readFile,
